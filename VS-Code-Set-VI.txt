@@ -1,0 +1,32 @@
+using System;
+using System.Collections;
+using System.Linq;
+namespace ConsoleAppDebug
+{
+    class Laptop
+    {
+        string model;
+        string color;
+        int year;
+        static void Main(string[] args)
+
+        {
+            Laptop Dell = new Laptop();
+            Dell.model = "Inspiron";
+            Dell.year = 2002;
+            Laptop hp = new Laptop();
+            hp.model = "Pavilion";
+            hp.color = "Silver";
+            hp.year = 2005;
+            Console.WriteLine("Dell Specifics:");
+            Console.WriteLine(Dell.model);
+            Console.WriteLine(Dell.color);
+            Console.WriteLine(Dell.year);
+            Console.WriteLine("******************");
+            Console.WriteLine("HP Specifics:");
+            Console.WriteLine(hp.model);
+            Console.WriteLine(hp.color);
+            Console.WriteLine(hp.year);
+        }
+    }
+}
